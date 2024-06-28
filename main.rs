@@ -1,4 +1,3 @@
-
 struct class
 {
     pub health: i32,
@@ -25,6 +24,19 @@ fn attack(opponent_health: i32, player_damage: i32)  -> i32
     return n
 }
 
+
+fn on_lvl_up_hp(starting_hp: i32) -> i32
+{   
+    let return_value: i32 = starting_hp + 15;
+
+    return return_value
+}
+fn on_lvl_up_dmg(starting_dmg: i32) -> i32
+{
+    let return_value: i32 = starting_dmg + 15;
+
+    return return_value
+}
 fn main() {
 
     // class init
@@ -48,8 +60,5 @@ fn main() {
         reward_xp: 30,
 
     };
-
-
-    
 
 }
